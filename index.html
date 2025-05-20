@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Memory Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body class="light-theme">
+    <img class="bg-image" src="background.webp" alt="background" />
+    <img class="bg-image2" src="background2.webp" alt="background" />
+    <!-- <header style="text-align: center; margin-bottom: 20px">
+      <img
+        src="https://fontmeme.com/permalink/240519/a863e30032ac4ab0c165e9a39650621b.png"
+        alt="pokemon-logo"
+        style="width: 60%"
+      />
+    </header> -->
+    <div class="game-container">
+      <h1 class="title">Pokémon Memory Match!</h1>
+      <div class="game-header">
+        <div class="game-stats">
+          <div>Clicks: <span id="click-count">0</span></div>
+          <div>Pairs Left: <span id="pairs-left">0</span></div>
+          <div>Pairs Matched: <span id="pairs-matched">0</span></div>
+          <div>Total Pairs: <span id="total-pairs">0</span></div>
+          <div>Time: <span id="timer">0</span>s</div>
+        </div>
+        <div class="game-controls">
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <select id="theme">
+            <option value="light">Palkia Theme</option>
+            <option value="dark">Dialga Theme</option>
+          </select>
+          <button id="start-btn">Start Game</button>
+          <button id="reset-btn">Reset Game</button>
+        </div>
+      </div>
+      <div id="game_grid">
+        <!-- js generated cards -->
+      </div>
+      <div id="power-up-container">
+        <button id="power-up-btn" disabled>Power Up: Reveal All (3s)</button>
+      </div>
+    </div>
+
+    <!-- Pop up -->
+    <div id="game-modal">
+      <h2 id="modal-title">Test Title</h2>
+      <p id="modal-message">Test message</p>
+      <button id="modal-button">Close</button>
+    </div>
+  </body>
+</html>
