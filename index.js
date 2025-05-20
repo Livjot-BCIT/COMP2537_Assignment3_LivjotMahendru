@@ -32,8 +32,8 @@ let gameState = {
 // ======= DIFFICULTY SETTINGS =======
 const DIFFICULTY_SETTINGS = {
   easy: { pairs: 3, time: 60 },
-  medium: { pairs: 6, time: 90 },
-  hard: { pairs: 9, time: 120 },
+  medium: { pairs: 6, time: 60 },
+  hard: { pairs: 9, time: 60 },
 };
 
 // ======= INITIALIZE GAME =======
